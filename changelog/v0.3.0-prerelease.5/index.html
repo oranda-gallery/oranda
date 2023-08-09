@@ -1,0 +1,47 @@
+<!doctype html><html class="axo dark" id="oranda" lang="en"><head><title>oranda</title><meta content="https://opensource.axo.dev/oranda" property="og:url"/><link href="/oranda/favicon.ico" rel="icon"/><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="🎁 generate beautiful landing pages for your projects" name="description"/><meta content="🎁 generate beautiful landing pages for your projects" name="description"/><meta content="🎁 generate beautiful landing pages for your projects" property="og:description"/><meta content="website" property="og:type"/><meta content="oranda" property="og:title"/><meta content="interest-cohort=()" http_equiv="Permissions-Policy"/><meta content="summary_large_image" name="twitter:card"/><meta content="https://www.axo.dev/meta_small.jpeg" property="og:image"/><meta content="axo" property="og:image:alt"/><meta content="@axodotdev" name="twitter:creator"/><meta content="@axodotdev" name="twitter:site"/><link href="/oranda/oranda-v0.1.1.css" rel="stylesheet"/></head><body><div class="container"><div class="page-body"><div class="repo_banner"><a href="https://github.com/oranda-gallery/oranda"><div class="github-icon" aria-hidden="true"></div>Check out our GitHub</a></div><main><header><h1 class="title">oranda</h1><nav class="nav"><ul><li><a href="/oranda/">Home</a></li><li><a href="/oranda/artifacts/">Install</a></li><li><a href="/oranda/book/">Docs</a></li><li><a href="/oranda/changelog/">Changelog</a></li></ul></nav></header><div><div><h1>Version 0.3.0-prerelease.5</h1><div class="releases-body"><section class="hidden pre-release release"><h2 class="hidden" id="tag-v0.3.0-prerelease.5"><a href="#v0.3.0-prerelease.5">Version 0.3.0-prerelease.5</a></h2><div class="release-info"><span class="flex gap-2 items-center"><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z' />
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6 6h.008v.008H6V6z' /></svg>v0.3.0-prerelease.5</span><span class="flex gap-2 items-center"><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
+    <path stroke-linecap='round' stroke-linejoin='round' d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5' /></svg>Aug  8 2023 at 16:16 UTC</span></div><div class="mb-6 release-body"><h3>Features</h3>
+<ul>
+<li>
+<p><strong>Workspace Support - <a href="https://github.com/shadows-withal" rel="noopener noreferrer">shadows-withal</a>/many PRs, <a href="https://github.com/jamesmunns" rel="noopener noreferrer">jamesmunns</a>/<a href="https://github.com/axodotdev/oranda/issues/493" rel="noopener noreferrer">i493</a></strong></p>
+<p>You can now tell oranda to build multiple sites at once! By default, this will also generate a separate "root"
+page, providing an index into all projects defined within your workspace.</p>
+<p>Details TBD</p>
+</li>
+<li>
+<p><strong>Inlining CSS</strong> - <a href="https://github.com/shadows-withal" rel="noopener noreferrer">shadows-withal</a>/<a href="https://github.com/axodotdev/oranda/pull/565" rel="noopener noreferrer">pr565</a>, <a href="https://github.com/axodotdev/oranda/pull/566" rel="noopener noreferrer">pr566</a>, <a href="https://github.com/axodotdev/oranda/issues/554" rel="noopener noreferrer">i554</a></p>
+<p>oranda now uses a CSS version that's included in the binary it's shipped with! This means no more HTTP requests to GitHub
+to fetch a CSS version over and over. As a bonus, we removed the internal dependency on a Node.js toolchain to build
+the CSS in development, which should make hacking on oranda and its themes a lot easier!</p>
+</li>
+<li>
+<p><strong>Basic CSS caching - <a href="https://github.com/jamesmunns" rel="noopener noreferrer">jamesmunns</a>/<a href="https://github.com/axodotdev/oranda/pull/551" rel="noopener noreferrer">pr551</a></strong></p>
+<p>In line with workspace support, oranda will now attempt to keep already downloaded versions of its CSS in-memory, which
+helps tremendously when you have a lot of workspace members all using a custom CSS version.</p>
+</li>
+</ul>
+<h3>Fixes</h3>
+<ul>
+<li>
+<p><strong>Display platforms alphabetically in install widget - <a href="https://github.com/Plecra" rel="noopener noreferrer">Plecra</a>/<a href="https://github.com/axodotdev/oranda/pull/544" rel="noopener noreferrer">pr544</a>, <a href="https://github.com/shadows-withal" rel="noopener noreferrer">shadows-withal</a>/<a href="https://github.com/axodotdev/oranda/issues/480" rel="noopener noreferrer">i480</a></strong></p>
+<p>Platforms are now sorted alphabetically in the install widget dropdown. This is an improvement over the
+previous unsorted state.</p>
+</li>
+<li>
+<p><strong>Show prerelease contents on changelog pages - <a href="https://github.com/shadows-withal" rel="noopener noreferrer">shadows-withal</a>/<a href="https://github.com/axodotdev/oranda/pull/549" rel="noopener noreferrer">pr549</a></strong></p>
+<p>This is a simple bug fix. Previously, we accidentally hid the body of a prerelease on its own separate changelog page
+(but mysteriously, it showed up on the main changelog page when prereleases were toggled!)</p>
+</li>
+<li>
+<p><strong>Restrict parsed repo URLs to GitHub only - <a href="https://github.com/Plecra" rel="noopener noreferrer">Plecra</a>/<a href="https://github.com/axodotdev/oranda/pull/553" rel="noopener noreferrer">pr553</a></strong></p>
+<p>Right now, we only support GitHub repository URLs to get context from. This fixed an issue where technically, oranda
+would attempt to do this with GitLab URLs as well, which would cause unintended behavior.</p>
+</li>
+<li>
+<p><strong>Support <code>git+https</code> URLs</strong> - <a href="https://github.com/shadows-withal" rel="noopener noreferrer">shadows-withal</a>/<a href="https://github.com/axodotdev/oranda/pull/563" rel="noopener noreferrer">pr563</a>, <a href="https://github.com/geelen" rel="noopener noreferrer">geelen</a>/<a href="https://github.com/axodotdev/oranda/issues/531" rel="noopener noreferrer">i531</a></p>
+<p>oranda now correctly handles <code>git+https://yourrepo</code> repository URLs, and is a lot more informative when it encounters
+one that it <em>can't</em> parse.</p>
+</li>
+</ul>
+</div></section></div></div></div></main></div><footer><a href="https://github.com/oranda-gallery/oranda"><div class="github-icon" aria-hidden="true"></div></a><span>oranda, MIT OR Apache-2.0 license.</span></footer></div><script defer="true" src="https://plausible.io/js/script.js" data-domain="opensource.axo.dev"></script><div><script src="/oranda/artifacts.js"></script></div></body></html>
